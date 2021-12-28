@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  <span>
+    <!-- <a routerLink="/"  *ngIf="userStatus">MyMessages</a> -->
+  </span>
+  <span class="spacer"></span>
+  <ul>
+
+    <li>
+      <a mat-button  routerLinkActive="mat-accent" routerLink="login">login</a>
+    </li>
+
+    <li>
+      <a mat-button routerLinkActive="mat-accent" routerLink="signup" >Signup</a>
+    </li>
+
+  </ul>
+  <div>
+    <a mat-button routerLink="/empFeedback" *ngIf="auth"> New Feedback </a>
+    <a mat-button routerLink="/feedbackList"  *ngIf="auth"> List </a>
+  </div>
+</mat-toolbar>
+<!-- <app-login *ngIf="userStatus">
+
+</app-login>
+<app-signup *ngIf="!userStatus"></app-signup> -->
